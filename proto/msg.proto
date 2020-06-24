@@ -1,0 +1,12 @@
+syntax = "proto3";
+//package msg;
+
+option go_package = ".;msg";
+
+message BufSt {
+  repeated int32  Icons = 1;  // 图标数据
+}
+
+message SampleBuf {
+  map<int32, BufSt> UserS = 1; // 存储的数据
+}
